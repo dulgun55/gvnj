@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sozoo</title>
-  <meta http-equiv="refresh" content="0; url=sozoo.html" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Гэгээн Валентины минь гүнждээ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+<style>
+/* --- Base Styles --- */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{font-size:26px;}
+body{font-family:'Lato',sans-serif;background:#fff0f3;color:#2d2926;font-size:1rem;line-height:1.85;overflow-x:hidden;}
+:root{--burgundy:#6b2038;--burgundy-light:#8a3050;--cream:#fff0f3;--cream-dark:#ffe8ed;--gold:#c9943e;--charcoal:#2d2926;--charcoal-light:#4a4541;--rose:#f28ca6;--rose-light:#f7c2d1;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,240,243,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(107,32,56,0.08);padding:1.7rem 3rem;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:'Playfair Display',serif;font-size:3.4rem;font-weight:700;color:var(--burgundy);display:flex;align-items:center;gap:1rem;}
+.logo svg{width:52px;height:52px;fill:var(--burgundy);}
+.nav-cta{display:inline-flex;align-items:center;justify-content:center;padding:1.1rem 3rem;background:var(--burgundy);color:var(--cream);text-decoration:none;border-radius:999px;font-size:1.7rem;font-weight:700;letter-spacing:0.04em;transition:0.3s;}
+.nav-cta:hover{background:var(--burgundy-light);transform:translateY(-2px);}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:11.5rem 3.6rem 7rem;background:linear-gradient(180deg,var(--cream) 0%,var(--cream-dark) 100%);}
+.hero-heart{width:230px;height:230px;fill:var(--burgundy);margin-bottom:4.2rem;opacity:0.9;animation:heartbeat 1.6s ease-in-out infinite;}
+@keyframes heartbeat{0%,100%{transform:scale(1);}14%{transform:scale(1.2);}28%{transform:scale(1);}42%{transform:scale(1.15);}56%{transform:scale(1);}}
+.hero h1{font-size:clamp(7.1rem,11.5vw,10rem);color:var(--burgundy);line-height:1.06;margin-bottom:2.6rem;font-weight:700;}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero p{font-size:2.6rem;color:var(--charcoal-light);max-width:1020px;margin-bottom:4.2rem;font-weight:400;}
+.hero-btn{display:inline-flex;align-items:center;gap:1rem;padding:2rem 6.2rem;background:var(--burgundy);color:var(--cream);border:none;border-radius:100px;font-family:'Lato',sans-serif;font-size:2rem;font-weight:700;cursor:pointer;text-decoration:none;transition:0.3s;}
+.hero-btn:hover{background:var(--burgundy-light);transform:translateY(-2px);}
+.hero-divider{width:185px;height:8px;background:var(--gold);margin:3.5rem auto 0;opacity:0.7;}
+@media(max-width:900px){html{font-size:20px;}}
+@media(max-width:768px){html{font-size:16px;}.logo{font-size:2.6rem;}.logo svg{width:40px;height:40px;}.nav-cta{font-size:1.2rem;padding:0.85rem 2rem;}.hero{padding:7.6rem 1.8rem 4.2rem;}.hero-heart{width:160px;height:160px;}.hero h1{font-size:clamp(4rem,12vw,5.6rem);}.hero p{font-size:1.6rem;}.hero-btn{font-size:1.35rem;padding:1.1rem 3.2rem;}}
+@media(max-width:480px){html{font-size:14px;}.hero{padding:6.6rem 1.4rem 3.6rem;}.hero-heart{width:140px;height:140px;}.hero p{font-size:1.3rem;}.hero-btn{font-size:1.2rem;padding:1rem 2.8rem;}}
+</style>
 </head>
 <body>
-  <p>Redirecting to <a href="sozoo.html">sozoo.html</a>...</p>
+
+<header class="hero">
+<svg class="hero-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+<h1>Валентины өдрийн мэнд, <em>Хөөрхөн гүнждээ</em></h1>
+<p>Зөвхөн чамдаа зориулав.</p>
+<a href="letter.html" class="hero-btn">Бэлгээ нээгээрэй
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+</a>
+<div class="hero-divider"></div>
+</header>
+
+<script>
+</script>
 </body>
 </html>
