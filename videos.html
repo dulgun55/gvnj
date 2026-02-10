@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Бижлэг</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+<style>
+/* --- Copy styles from index.html --- */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{font-size:32px;}
+body{font-family:'Lato',sans-serif;background:#fff0f3;color:#2d2926;font-size:1rem;line-height:1.75;overflow-x:hidden;}
+:root{--burgundy:#6b2038;--burgundy-light:#8a3050;--cream:#fff0f3;--cream-dark:#ffe8ed;--gold:#c9943e;--charcoal:#2d2926;--charcoal-light:#4a4541;--rose:#f28ca6;--rose-light:#f7c2d1;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,240,243,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(107,32,56,0.08);padding:1.4rem 2.8rem;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:'Playfair Display',serif;font-size:2.7rem;font-weight:700;color:var(--burgundy);display:flex;align-items:center;gap:0.7rem;}
+.logo svg{width:40px;height:40px;fill:var(--burgundy);}
+.nav-actions{display:flex;gap:1.4rem;}
+.nav-btn{display:inline-flex;align-items:center;justify-content:center;padding:1.05rem 2.4rem;background:var(--burgundy);color:var(--cream);text-decoration:none;border-radius:999px;font-size:1.35rem;font-weight:700;letter-spacing:0.03em;transition:0.3s;}
+.nav-btn:hover{background:var(--burgundy-light);transform:translateY(-2px);}
+.nav-btn.secondary{background:transparent;color:var(--burgundy);border:2px solid var(--burgundy);}
+.nav-btn.secondary:hover{background:var(--burgundy);color:var(--cream);}
+.hero{min-height:50vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 3rem 5.4rem;background:linear-gradient(180deg,var(--cream) 0%,var(--cream-dark) 100%);}
+.hero h1{font-size:clamp(4.1rem,7.6vw,6.2rem);color:var(--burgundy);line-height:1.2;margin-bottom:1.9rem;font-weight:700;}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero p{font-size:2rem;color:var(--charcoal-light);max-width:820px;margin-bottom:3.1rem;font-weight:400;}
+.hero-divider{width:120px;height:6px;background:var(--gold);margin:2.6rem auto 0;opacity:0.7;}
+section{padding:9rem 3.4rem;}
+.section-title{text-align:center;font-size:clamp(3.9rem,6.3vw,5.1rem);color:var(--burgundy);margin-bottom:1.3rem;}
+.section-sub{text-align:center;color:var(--charcoal-light);font-size:1.8rem;margin-bottom:2.2rem;font-weight:400;}
+.section-divider{width:105px;height:6px;background:var(--gold);margin:0 auto 5rem;opacity:0.6;}
+.video-wrapper{max-width:1200px;margin:0 auto;display:flex;gap:3.1rem;align-items:flex-start;justify-content:center;flex-wrap:wrap;}
+.video-wrapper video{width:100%;aspect-ratio:9/16;border-radius:18px;background:#000;max-width:520px;}
+.upload-area{max-width:1000px;margin:0 auto 2.5rem;display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap;}
+.upload-area label{font-weight:700;color:var(--burgundy);}
+.upload-area input[type="file"]{font-size:1rem;}
+.video-cta{display:flex;justify-content:center;margin-top:4rem;}
+.video-cta a{display:inline-flex;align-items:center;justify-content:center;padding:1.15rem 3.2rem;background:var(--burgundy);color:var(--cream);text-decoration:none;border-radius:999px;font-size:1.4rem;font-weight:700;letter-spacing:0.03em;transition:0.3s;}
+.video-cta a:hover{background:var(--burgundy-light);transform:translateY(-2px);}
+@media(max-width:900px){html{font-size:24px;}}
+@media(max-width:768px){html{font-size:18px;}.logo{font-size:2.2rem;}.logo svg{width:30px;height:30px;}.hero{padding:6.2rem 1.8rem 4rem;}.hero h1{font-size:clamp(3rem,9.5vw,4.6rem);}.hero p{font-size:1.4rem;}.video-cta a{font-size:1.1rem;padding:0.9rem 2.2rem;}}
+@media(max-width:480px){html{font-size:16px;}.hero{padding:5.6rem 1.4rem 3.6rem;}.hero p{font-size:1.2rem;}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>Чамдаа
+</div>
+<div class="nav-actions">
+  <a class="nav-btn secondary" href="gallery.html">Буцах</a>
+</div>
+</nav>
+
+<header class="hero">
+<h1>Бижлэг</h1>
+<p>Бидний хамтдаа бүтээлцсэн хөөрхөн дурсамжууд</p>
+<div class="hero-divider"></div>
+</header>
+
+<section>
+<div class="video-wrapper">
+<video controls>
+  <source src="Sozoo (1).MOV" type="video/mp4">
+</video>
+<video controls>
+  <source src="Sozoo.MOV" type="video/mp4">
+</video>
+</div>
+<div class="video-cta">
+  <a href="coupons.html">Купон</a>
+</div>
+</section>
+
+<script>
+var hamburger=document.getElementById("hamburger");
+var navLinks=document.getElementById("navLinks");
+hamburger.addEventListener("click",function(){navLinks.classList.toggle("open");});
+
+var videoUpload=document.getElementById("videoUpload");
+var videoWrapper=document.querySelector(".video-wrapper");
+if(videoUpload && videoWrapper){
+  videoUpload.addEventListener("change",function(){
+    Array.prototype.forEach.call(videoUpload.files,function(file){
+      if(!file.type.match(/^video\/mp4$/)) return;
+      var video=document.createElement("video");
+      video.setAttribute("controls","");
+      video.src=URL.createObjectURL(file);
+      videoWrapper.appendChild(video);
+    });
+    videoUpload.value="";
+  });
+}
+</script>
+</body>
+</html>
